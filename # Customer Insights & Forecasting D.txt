@@ -1,0 +1,25 @@
+# Customer Insights & Forecasting Dashboard
+
+## Project Overview
+This project provides a comprehensive analysis of customer data to uncover insights into user behavior, sales trends, and forecasts. The project utilizes Python for data processing and forecasting, along with Tableau for visualizing key business metrics.
+
+## Project Structure
+- **data/**: Raw and cleaned customer data.
+- **notebooks/**: Jupyter notebooks for data preprocessing and forecasting.
+- **scripts/**: Python scripts for automating tasks.
+- **dashboards/**: Tableau dashboard files for visualizing the data.
+
+## Requirements
+- Python 3.x
+- Libraries: pandas, numpy, fbprophet, matplotlib, etc.
+- Tableau (optional for dashboard)
+
+## How to Run
+1. Clone the repository.
+2. Install the necessary Python libraries using `pip install -r requirements.txt`.
+3. Run the `data_preprocessing.ipynb` notebook to clean and process the data.
+4. Apply forecasting models in `forecasting_model.ipynb`.
+5. Visualize the results using the Tableau dashboard or generate a Python-based dashboard.
+
+## License
+This project is licensed under the MIT License.

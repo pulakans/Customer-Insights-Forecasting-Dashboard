@@ -1,0 +1,19 @@
+from fbprophet import Prophet
+import pandas as pd
+
+# Load cleaned data
+data = pd.read_csv('data/cleaned_data.csv')
+
+# Prepare the data for Prophet
+forecast_data = data[['Date', 'Total_Spent']].rename(columns={'Date': 'ds', 'Total_Spent': 'y'})
+
+# Initialize Prophet model and fit
+model = Prophet()
+model.fit(forecast_data)
+
+# Make predictions
+future = model.make_future_dataframe(forecast_data, periods=365)
+forecast = model.predict(future)
+
+# Save forecasted data
+forecast.to_csv('data/forecast_data.csv', index=False)

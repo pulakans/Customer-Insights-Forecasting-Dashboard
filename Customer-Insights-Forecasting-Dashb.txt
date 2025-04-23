@@ -1,0 +1,21 @@
+Customer-Insights-Forecasting-Dashboard/
+│
+├── data/
+│   ├── customer_data.csv       # Raw customer data file
+│   ├── cleaned_data.csv        # Cleaned and processed data
+│   └── forecast_data.csv       # Data used for forecasting
+│
+├── notebooks/
+│   └── data_preprocessing.ipynb  # Jupyter Notebook for data cleaning & transformation
+│   └── forecasting_model.ipynb   # Jupyter Notebook for forecasting analysis (e.g., ARIMA or Prophet)
+│
+├── scripts/
+│   └── data_cleaning.py        # Python script for data preprocessing
+│   └── forecasting.py          # Python script for applying forecasting models
+│   └── generate_dashboard.py   # Python script to interact with Tableau or create an interactive dashboard
+│
+├── dashboards/
+│   └── customer_dashboard.twb  # Tableau workbook for visualizing data
+│   └── README.md              # README explaining how to run the dashboard
+│
+└── README.md                  # Main readme file for the project
